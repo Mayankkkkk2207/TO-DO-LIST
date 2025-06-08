@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -18,5 +19,17 @@
             <!-- Tasks will be added here dynamically -->
         </ul>
     </div>
+
+    <hr>
+
+    <footer>
+        <p>Created by: Mayank Kumrawat</p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+    </footer>
+
+    <script>
+        // Auto update the current date
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
